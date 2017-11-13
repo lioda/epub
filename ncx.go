@@ -7,6 +7,7 @@ type Ncx struct {
 
 //NavPoint nav point
 type NavPoint struct {
+	Id      string     `xml:"id,attr" json:"id"`
 	Text    string     `xml:"navLabel>text" json:"text"`
 	Content Content    `xml:"content" json:"content"`
 	Points  []NavPoint `xml:"navPoint" json:"points"`
